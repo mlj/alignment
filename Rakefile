@@ -1,22 +1,16 @@
-require 'rubygems'
-require 'rake'
- 
+# -*- encoding: utf-8 -*-
 begin
-  require 'echoe'
- 
-  Echoe.new('alignment', '0.1.0') do |p|
-    p.summary = "Alignment functions for corpus linguistics."
-    p.author = 'Marius L. Jøhndal'
+  require 'jeweler'
+
+  Jeweler::Tasks.new do |p|
+    p.name = "alignment"
+    p.summary = "Alignment functions for corpus linguistics"
+    p.description = "Alignment functions for corpus linguistics."
+    p.authors = ['Marius L. Jøhndal']
     p.email = "mariuslj (at) ifi [dot] uio (dot) no"
-    p.url = "http://github.com/mlj/alignment"
-    p.ignore_pattern = ["*.gemspec"]
-    p.rdoc_pattern = ["README.rdoc", "lib/*.rb"]
-#    p.rubyforge_name = "alignment"
+    p.homepage = "http://github.com/mlj/alignment"
+    p.rubyforge_project = "alignment"
   end
- 
-rescue LoadError => boom
-  puts "You are missing a dependency required for meta-operations on this gem."
-  puts "#{boom.to_s.capitalize}."
+rescue LoadError
+  puts "Jeweler not available. Install it with: sudo gem install jeweler"
 end
- 
-Dir["#{File.dirname(__FILE__)}/tasks/*.rake"].sort.each { |ext| load ext }
