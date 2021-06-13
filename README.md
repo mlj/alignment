@@ -1,13 +1,15 @@
-= alignment
+# alignment
 
 Alignment functions for corpus linguistics. Currently implemented
 is the Gale-Church alignment algorithm.
 
-== Installation
+## Installation
 
-  gem install alignment
+```
+gem install alignment
+```
 
-== License
+## License
 
 GPL2
 
@@ -18,9 +20,6 @@ Kenneth Church.
 
 Ruby version is copyright Marius L. Jøhndal.
 
-== Usage
-
-
-== Development
+## Development
 
 The project is hosted on github on http://github.com/mlj/alignment.
